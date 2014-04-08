@@ -1,0 +1,9 @@
+<%= provide(:title, 'Contact') %>
+<%= link_to "About", static_about_path %>
+<%= link_to "Home", static_home_path %>
+<%= link_to "Articles", dynamic_articles_path %>
+<%= link_to "Videos", dynamic_videos_path %>
+
+<h1>This is the <%= yield(:title) %> page. </h1>
+<p></p>
+
