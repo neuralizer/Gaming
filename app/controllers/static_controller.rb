@@ -1,4 +1,7 @@
 class StaticController < ApplicationController
+
+	@time = Time.now
+	
   def home
   end
   
@@ -6,6 +9,7 @@ class StaticController < ApplicationController
   end
   
   def contact
+  	  @time = Time.now
   end
  
 end
