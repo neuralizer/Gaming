@@ -49,3 +49,7 @@ end
 
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+
+#adding support for crypting passwords
+
+gem 'bcrypt-ruby', '3.1.2'

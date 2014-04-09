@@ -53,3 +53,12 @@ gem 'sprockets', '2.11.0'
 #adding support for crypting passwords
 
 gem 'bcrypt-ruby', '3.1.2'
+
+group :test do
+
+#add Cucumber for BDD trial and error
+
+gem 'cucumber-rails', '1.4.0', :require => false
+gem 'database_cleaner', github: 'bmabey/database_cleaner'
+
+end
