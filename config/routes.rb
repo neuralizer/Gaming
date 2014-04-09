@@ -1,9 +1,13 @@
 Gaming::Application.routes.draw do
-  get "static/home"
-  get "static/about"
-  get "static/contact"
-  get "dynamic/articles"
-  get "dynamic/videos"
+  match "/home" , to: 'static#home', via: 'get'
+  match "/about", to: 'static#about', via: 'get' 
+  match "/contact", to: 'static#contact', via: 'get'
+  match "/articles", to: 'dynamic#articles', via: 'get'
+  match "/videos", to: 'dynamic#videos', via: 'get'
+  match "/privacy_policy", to: 'static#privacy_policy', via: 'get'
+  match "/sitemap", to: 'static#sitemap', via: 'get'
+  match "/partners", to: 'static#partners', via: 'get'
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
