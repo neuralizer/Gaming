@@ -7,8 +7,8 @@ Gaming::Application.routes.draw do
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
-  
-  
+  match '/users', to:'users#index', via: 'get'
+	  
   match "/about", to: 'static#about', via: 'get' 
   match "/contact", to: 'static#contact', via: 'get'
   match "/privacy_policy", to: 'static#privacy_policy', via: 'get'

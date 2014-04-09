@@ -65,6 +65,6 @@ gem 'database_cleaner', github: 'bmabey/database_cleaner'
 #adding Faker to fake members
 
 gem 'faker', '1.1.2'
-
+gem 'will_paginate', '3.0.4'
 
 end
